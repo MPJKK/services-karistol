@@ -1,0 +1,8 @@
+<input [(ngModel)]="pysakki">
+<button (click)="search()">search</button>
+<h3>
+    Pysäkin nimi:
+</h3>
+<ul>
+    <li *ngFor="let pysakit of temp">{{pysakit.name}}</li>
+</ul>
